@@ -41,6 +41,32 @@ nav ul li a:hover{
     padding: 5px;
 }
 
+.socialIcons{
+    position: absolute;
+    right: 110px;
+}
+.socialIcon{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.socialIcon i{
+    margin-left: 10px;
+    transition: 300ms;
+    color: white;
+}
+.socialIcon:hover i{
+    transform: scale(1.2);
+}
+.IG:hover i{
+    color: #C13584
+}
+.GH:hover i{
+    color: #310892;
+}
+.YT:hover i{
+    color: rgb(255, 26, 26);
+}
+
 
 /*  LANDING PAGE  */
 
@@ -80,7 +106,7 @@ h2{
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    height: 100vh;
+    height:60vh;
     cursor: pointer;
     overflow: hidden;
 
@@ -100,6 +126,8 @@ h2{
     width: 70%;
     border-radius: 50%;
     transition: 600ms;
+    position: relative;
+    bottom: 50px;
 }
 .landingPageHero:hover > .sneakerShadow{
     transform: translate(-10px) scale(1.2);
@@ -121,8 +149,6 @@ button{
     font-weight: 600;
     cursor: pointer;
     transition: 300ms;
-}
-.btnPrimary{
 }
 .btnPrimary:hover{
     background: rgb(255, 0, 221);
@@ -155,14 +181,38 @@ button{
     align-items: center;
     padding-bottom: 50px;
     box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 600ms;
 }
+.productCard:hover{
+    transform: scale(1.03);
+}
+
 .productCard img{
-    width: 400px;
+    width: 300px;
     object-fit: contain;
     border-radius: 5pxs;
 }
+.splash{
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    height: 500px;
+    transition: 600ms;
+}
+.productCardSection:hover > .splash{
+    transform: scale(1.8) translate(-30px);
+    opacity: 1;
+}
 
-
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
 
 
 /*  ANIMATIONS */
