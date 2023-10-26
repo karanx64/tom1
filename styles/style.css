@@ -1,0 +1,43 @@
+*{
+    margin: 0%;
+    padding: 5px;
+}
+body{
+    color: aliceblue;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+}
+
+header{
+    text-align: center;
+    
+}
+
+header h2{
+    text-decoration: underline;
+}
+
+header h1{
+    font-size: 72px;
+    border: 2px solid aliceblue;
+}
+main{
+    border: 2px solid pink;
+    margin: 20px;
+
+}
+main a{
+    color:beige;
+    font-size: 500%;
+    text-decoration: none;
+}
+.mainPart{
+    border: 1px solid rgb(176, 233, 255);
+    margin:10px;
+}
