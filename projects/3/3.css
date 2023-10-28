@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+nav{
+    color: white;
+    background-color: black;
+    padding: 1rem;
+
+    display: flex;
+}
+.navUL{
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+.navLI a{
+    margin:0 1rem;
+    text-decoration: none;
+    color: white;
+    transition: 300ms;
+    font-weight: 600;
+
+}
+.navLI a:hover{
+    padding: 0.5rem;
+    border-radius: 15px;
+    background-color: greenyellow;
+    color: black;
+
+}
+
+/*  Hamburger MENU  */
+
+
+
+
+
