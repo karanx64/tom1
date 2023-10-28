@@ -5,18 +5,18 @@
 body{
     margin: 0;
     font-family: sans-serif;
+    background-color: rgb(46, 46, 46);
 }
 nav{
     color: white;
     background-color: black;
     padding: 1rem;
-
     display: flex;
 }
 .navUL{
     display: flex;
-    list-style: none;
     margin: auto;
+    list-style: none;
 }
 .navLI a{
     margin:0 1rem;
@@ -37,6 +37,63 @@ nav{
 /*  Hamburger MENU  */
 
 
+.navHamMenu{
+    display: none;
+    font-weight: 600;
+    transition: 600ms;
+}
+.navHamMenu input{
+    display: none;
+}
+
+.hamMenu{
+    display: none;
+    height: fit-content;
+}
+.navHamMenu input:checked + .hamMenu{
+    display: flex;
+    flex-direction: column;
+}
+.hamIcon{
+    text-align: center;
+}
+.hamUL{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.hamLI{
+    margin-top:  1rem;
+    text-align: center;
+    list-style: none;
+}
+.hamLI a{
+    text-decoration: none;
+    color: white;
+    transition: 50ms;
+    font-weight: 600;
+}
+.hamLI a:active{
+    padding: 0.5rem;
+    border-radius: 15px;
+    background-color: greenyellow;
+    color: black;
+
+}
 
 
 
+@media  screen and (max-width:768px) {
+    .navUL{
+        display: none;
+    }
+    .navHamMenu{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+main{
+    background-color: rgb(44, 44, 44);
+}
