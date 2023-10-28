@@ -161,6 +161,9 @@ button{
     cursor: pointer;
     transition: 300ms;
 }
+.btnPrimary{
+    font-family: sans-serif;
+}
 .btnPrimary:hover{
     background: rgb(255, 0, 221);
 }
